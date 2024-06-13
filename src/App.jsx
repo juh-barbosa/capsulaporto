@@ -9,7 +9,7 @@ export default function App(){
     const [message, setMessage] = useState('')
 
     async function enviarMensagem(){
-        axios.post('https://portohoot-backend.vercel.app/api/capsula',{
+        axios.post('https://portohoot-backend.onrender.com/api/capsula',{
             email: email,
             mensagem: message
         }).then(() => {
